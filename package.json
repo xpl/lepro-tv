@@ -1,0 +1,23 @@
+{
+  "name": "lepro-tv",
+  "version": "1.0.0",
+  "description": "Lepro TV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python -m SimpleHTTPServer 8080 & open http://localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpl/lepro-tv.git"
+  },
+  "keywords": [
+    "lepra"
+  ],
+  "author": "Vitaly Gordon <rocket.mind@gmail.com> (http://github.com/xpl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpl/lepro-tv/issues"
+  },
+  "homepage": "https://github.com/xpl/lepro-tv#readme"
+}
