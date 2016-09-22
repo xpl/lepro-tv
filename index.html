@@ -107,6 +107,8 @@
 
                     var median = (from + ((to - from) / 2)) | 0
 
+                    console.info ('range to search:', to - from, 'from:', from, 'median:', median)
+
                     return commentExists (median).then (function (yes) {
 
                         return yes ? findLastComment (median + 1, to) : findLastComment (from, median - 1)
