@@ -99,9 +99,9 @@
 
             function findLastComment (from, to) {
 
-                if (from === to) {
+                if ((to - from) < 2) {
 
-                    return Promise.resolve (from)
+                    return Promise.resolve (to)
 
                 } else {
 
@@ -185,7 +185,7 @@
                 })
             }
 
-            var searchFrom = (server === 'dirty') ? 18618817 : 47557083
+            var searchFrom = (server === 'dirty') ? 18618817 : 47557898
             var searchLength = (server === 'dirty') ? 1000000 : 500000
 
             findLastComment (searchFrom, searchFrom + searchLength).then (fetchCommentsFrom)
